@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Service - FloorScore</title>
+<style>
+  body { max-width: 760px; margin: 0 auto; padding: 3rem 1.5rem; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.2rem; margin-top: 2rem; }
+  h3 { font-size: 1rem; margin-top: 1.5rem; }
+  code { background: #f0f0f0; padding: 0.1em 0.35em; border-radius: 3px; font-size: 0.9em; }
+  a { color: #2c5ecc; }
+  .nav { font-size: .9rem; margin-bottom: 2.5rem; color: #6d7175; }
+  .nav a { margin-right: 1rem; }
+</style>
+</head>
+<body>
+
+<p class="nav"><a href="../">FloorScore</a> <a href="../privacy/">Privacy Policy</a> <a href="../terms/">Terms of Service</a></p>
+
+<h1>Terms of Service</h1>
+<p>Last updated: 11 August 2026</p>
+
+<p>
+  These terms govern your use of FloorScore ("the app") as a Shopify merchant. By
+  installing the app, you agree to them.
+</p>
+
+<h2>The service</h2>
+<p>
+  FloorScore attributes Shopify POS sales to staff members, shows a live leaderboard,
+  and calculates commission for payroll. It doesn't replace payroll or scheduling
+  software, and it depends on data Shopify itself provides (staff accounts, POS
+  transactions) - we're not responsible for inaccuracies in that underlying data.
+</p>
+
+<h2>Plans and billing</h2>
+<ul>
+  <li>Free: $0/month, up to 3 staff, 1 location.</li>
+  <li>Growth: $19/month after a 7-day free trial.</li>
+  <li>Multi-store: $59/month after a 7-day free trial.</li>
+</ul>
+<p>
+  All billing is handled by Shopify directly through its Billing API - we never process
+  payments or store payment details ourselves. You can change or cancel your plan at
+  any time from within the app.
+</p>
+
+<h2>Your data</h2>
+<p>
+  See our <a href="../privacy/">Privacy Policy</a> for what we collect and how it's
+  handled. Uninstalling the app doesn't delete your Shopify store data - only the data
+  this app itself stored.
+</p>
+
+<h2>Data protection</h2>
+<p>
+  This section forms the data processing agreement between us. It applies whenever the
+  app processes personal data on your behalf, and it's required by Shopify's protected
+  customer data requirements.
+</p>
+
+<h3>Roles</h3>
+<p>
+  You are the data controller for your store's data. We are a processor acting on your
+  behalf. Shopify is a separate processor for the data it holds; these terms don't
+  change your relationship with Shopify.
+</p>
+
+<h3>What we process, and why</h3>
+<p>
+  Only what's needed to attribute POS sales to staff and calculate commission: the
+  staff member, retail location, order identifier, sale amount, currency, item count
+  and timestamps. We request the <code>read_orders</code> and
+  <code>read_locations</code> scopes and nothing else.
+</p>
+<p>
+  <strong>We do not store customer names, emails, phone numbers or addresses.</strong>
+  Order webhooks contain customer details; the app discards them at the point of
+  ingestion rather than saving and filtering them later. There is no customer record in
+  our database.
+</p>
+
+<h3>Our commitments</h3>
+<ul>
+  <li>We process personal data only on your documented instructions, which for this app means providing the functionality described in these terms.</li>
+  <li>We don't sell personal data, use it for advertising, or use it to train machine learning models.</li>
+  <li>Anyone with access to the data is bound by confidentiality.</li>
+  <li>Data is encrypted in transit (HTTPS/TLS) and at rest.</li>
+  <li>Access to production data is limited to those who need it to operate or support the app.</li>
+</ul>
+
+<h3>Sub-processors</h3>
+<p>
+  We use the following sub-processors. We'll give you notice before adding a new one,
+  so you have an opportunity to object.
+</p>
+<ul>
+  <li>
+    <strong>Supabase</strong> - hosts the database. Data is stored on AWS in the Asia
+    Pacific (Tokyo) region.
+  </li>
+  <li>
+    <strong>Google Cloud Run</strong> (Google LLC) - runs the application itself, in
+    the Asia Pacific (Tokyo) region, alongside the database.
+  </li>
+  <li>
+    <strong>Sentry</strong> - error monitoring. Optional and disabled unless configured;
+    receives error diagnostics, not sales records.
+  </li>
+  <li>
+    <strong>PostHog</strong> - product analytics. Optional and disabled unless
+    configured; receives usage events such as "leaderboard opened".
+  </li>
+</ul>
+
+<h3>Requests from individuals</h3>
+<p>
+  We support Shopify's mandatory privacy webhooks. Because we hold no customer personal
+  data, a customer data request or redaction request has nothing to return or erase -
+  we acknowledge it and confirm there's nothing held. If you need help responding to a
+  request about staff data, contact us.
+</p>
+
+<h3>Security incidents</h3>
+<p>
+  If we become aware of a breach affecting your data, we'll notify you without undue
+  delay, with what we know about the scope and what we're doing about it.
+</p>
+
+<h3>Retention and deletion</h3>
+<p>
+  Sales history is deleted automatically after 24 months. When you uninstall, Shopify
+  sends a redaction request and we delete everything associated with your shop - see the
+  <a href="../privacy/">Privacy Policy</a> for detail. You can request earlier
+  deletion at any time.
+</p>
+
+<h2>Acceptable use</h2>
+<p>
+  The public leaderboard link the app generates is meant to be displayed at your store
+  for your staff and customers. Don't attempt to circumvent its access controls or use
+  the app to process data you don't have the right to process.
+</p>
+
+<h2>No warranty</h2>
+<p>
+  The app is provided "as is". We aim for accuracy in sales attribution and commission
+  calculations but don't guarantee the service will be uninterrupted or error-free.
+</p>
+
+<h2>Limitation of liability</h2>
+<p>
+  To the fullest extent the law allows, our total liability to you for any claim arising
+  out of or relating to the app is limited to the amount you paid us for it in the 12
+  months before the claim arose. If you're on the Free plan, that amount is zero.
+</p>
+<p>
+  We're not liable for indirect or consequential loss - including lost profits, lost
+  sales, or loss of goodwill - or for amounts paid to staff on the basis of figures the
+  app produced. The app is a reporting tool: <strong>commission figures and leaderboard
+  standings are for your reference, and you remain responsible for checking what you
+  actually pay your staff.</strong>
+</p>
+<p>
+  Nothing here excludes liability that can't be excluded under the law that applies to
+  you, and nothing limits any rights you have as a consumer where those rights apply.
+</p>
+
+<h2>Termination</h2>
+<p>
+  You can stop using the app at any time by uninstalling it from your Shopify admin.
+  Uninstalling cancels any subscription through Shopify's Billing API; we don't bill you
+  after that.
+</p>
+<p>
+  We may suspend or end your access if the app is used in breach of these terms, or if we
+  stop offering it. If we discontinue the app entirely, we'll give reasonable notice
+  where we can, so you have time to export your data.
+</p>
+<p>
+  On termination, your data is handled as described in the
+  <a href="../privacy/">Privacy Policy</a> - deleted after Shopify's redaction
+  request, and in any case within 30 days.
+</p>
+
+<h2>Governing law</h2>
+<p>
+  These terms are governed by the laws of Pakistan, and the courts of Pakistan have
+  jurisdiction over any dispute arising from them. This applies wherever your store is
+  located.
+</p>
+<p>
+  Choosing one governing law doesn't remove obligations that apply because of where
+  <em>you</em> are - if you're in the EU or UK, for example, data protection law still
+  applies to how your data is handled, and the data protection section above is written
+  to meet it.
+</p>
+
+<h2>Changes</h2>
+<p>We may update these terms; continued use of the app after an update means you accept the revised terms.</p>
+
+<h2>Contact</h2>
+<p>
+  Questions: <a href="mailto:hamzaali948@gmail.com">hamzaali948@gmail.com</a>
+</p>
+
+</body>
+</html>
